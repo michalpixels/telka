@@ -12,69 +12,83 @@
             box-sizing: border-box;
         }
 
-        /* Sand-inspired background styling */
+        /* Windows 98 inspired background styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Tahoma, Arial, sans-serif;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
             margin: 0;
-            color: #4a3621;
+            color: #000;
+            background-color: #c0c0c0;
             text-align: center;
             overflow: hidden;
-            background: #000000;
-            background-size: 400% 400%;
-            animation: gradientAnimation 12s ease infinite;
         }
 
-        /* Background animation for gradient effect */
-        @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Transparent box overlay for text */
+        /* Container box with retro border and shadow */
         main {
-            background: rgba(255, 248, 240, 0.8); /* Soft sand overlay */
+            background-color: #e0e0e0;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 2px solid #808080;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            box-shadow: 4px 4px 0 #404040;
             max-width: 600px;
             width: 100%;
         }
 
         h1 {
-            font-size: 2.2em;
-            margin-bottom: 10px;
-            color: #8b5e3c;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #000080;
         }
 
         p, h3 {
-            font-size: 1.1em;
-            line-height: 1.6;
+            font-size: 1em;
+            line-height: 1.5;
             margin: 10px 0;
-            color: #4a3621;
+            color: #000;
         }
 
+        /* Link styling */
         a {
-            color: #8b5e3c;
+            color: #0000ee;
             text-decoration: none;
+            border-bottom: 1px dotted;
         }
 
         a:hover {
+            color: #ff0000;
             text-decoration: underline;
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-top: 20px;
+            font-size: 1em;
+            color: #000;
+            background-color: #c0c0c0;
+            border: 2px solid #808080;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #a0a0a0;
         }
 
         /* Responsive styling */
         @media (max-width: 600px) {
             h1 {
-                font-size: 1.8em;
+                font-size: 1.5em;
             }
 
             p, h3 {
-                font-size: 1em;
+                font-size: 0.9em;
             }
 
             main {
@@ -89,8 +103,8 @@
         <h1>This is a premium domain name</h1>
         <p>For more info about this domain,<br>
         you can send an email at: <a href="mailto:michal@mic.center">michal@mic.center</a></p>
-        <p>&nbsp;</p>
         <h3>If you want to send a price offer for buying this domain, you can do it by filling <a href="https://is.gd/telkaonline" target="_blank">this form.</a></h3>
+        <button class="btn" onclick="window.location.href='https://is.gd/telkaonline'">Send Offer</button>
     </main>
 
 </body>
